@@ -98,78 +98,16 @@ AFRAME.registerComponent("atoms", {
     nucleus.appendChild(nucleusName);
 
     atom.appendChild(nucleus);
-
-    var orbitAngle = -180;
-    var electronAngle = 30;
-
-    for (var num = 1; num <= numOfElectron; num++) {
-      //Create orbit
-      var orbit = document.createElement("a-entity");
-      orbit.setAttribute("geometry", {
-        primitive: "torus",
-        arc: 360,
-        radius: 0.28,
-        radiusTubular: 0.001
-      });
-
-      orbit.setAttribute("material", {
-        color: "#ff9e80",
-        opacity: 0.3
-      });
-
-      orbit.setAttribute("position", {
-        x: 0,
-        y: 1,
-        z: 0
-      });
-
-      orbit.setAttribute("rotation", {
-        x: 0,
-        y: orbitAngle,
-        z: 0
-      });
-
-      orbitAngle += 45;
-
-      atom.appendChild(orbit);
-
-      //Create electron revolution animation entity
-      var electronGroup = document.createElement("a-entity");
-      electronGroup.setAttribute("id", `electron-group-${elementName}`);
-      electronGroup.setAttribute("rotation", {
-        x: 0,
-        y: 0,
-        z: electronAngle
-      });
-
-      electronAngle += 65;
-
-      electronGroup.setAttribute("animation", {
-        property: "rotation",
-        to: `0 0 -360`,
-        loop: "true",
-        dur: 3500,
-        easing: "linear"
-      });
-
-      orbit.appendChild(electronGroup);
-
-      //Create electron
-      var electron = document.createElement("a-entity");
-      electron.setAttribute("id", `electron-${elementName}`);
-      electron.setAttribute("geometry", {
-        primitive: "sphere",
-        radius: 0.02
-      });
-
-      electron.setAttribute("material", { color: "#0d47a1", opacity: 0.6 });
-      electron.setAttribute("position", {
-        x: 0.2,
-        y: 0.2,
-        z: 0
-      });
-
-      electronGroup.appendChild(electron);
+    
+    
+    /*
+    
+    
+    REPLACE THE COMMENT WITH THE CODE
+    
+    
+    
+    */
 
 
     }
