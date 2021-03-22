@@ -109,7 +109,6 @@ AFRAME.registerComponent("atoms", {
     
     */
 
-
-    }
+    
   }
 });
